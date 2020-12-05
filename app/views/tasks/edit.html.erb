@@ -1,0 +1,14 @@
+<h1>Edit your task to your list</h1>
+
+<%= form_for @task do |f| %>
+  <%= f.label :title, "Enter the name of the task" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details, "Enter a quick description" %>
+  <%= f.text_field :details %>
+
+  <%= f.label :completed, "Indicate if the task is completed or not" %>
+  <%= f.check_box :completed %>
+
+  <%= f.submit %>
+<% end %>
